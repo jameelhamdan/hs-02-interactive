@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Speghetti Factory is a browser-based vibecoding IDE. Code, run, and collaborate instantly—like Replit, Windsurf, or Cursor, with a vibe.">
+  <meta name="keywords" content="speghetti factory, vibecoding, online ide, browser ide, code editor, ai coding, replit alternative, windsurf alternative, cursor alternative">
+  <meta name="theme-color" content="#0ea5e9">
+  <meta name="color-scheme" content="light dark">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Speghetti Factory • Vibecoding IDE">
+  <meta property="og:description" content="Code, run, and collaborate in the browser. An instant IDE with a vibe.">
+  <meta property="og:url" content="https://example.com">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Speghetti Factory • Vibecoding IDE">
+  <meta name="twitter:description" content="Code, run, and collaborate in the browser. An instant IDE with a vibe.">
+  
+  <title>Speghetti Factory • Vibecoding IDE</title>
+  
+  <link rel="icon" type="image/svg+xml" href="./images/brand.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/brand.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/brand.svg">
+  <link rel="apple-touch-icon" href="./images/brand.svg">
+  
+  <link rel="preconnect" href="https://picsum.photos" crossorigin>
+  <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin>
+  <link rel="preconnect" href="https://www.openstreetmap.org" crossorigin>
+  <link rel="dns-prefetch" href="https://picsum.photos">
+  <link rel="dns-prefetch" href="https://www.youtube-nocookie.com">
+  <link rel="dns-prefetch" href="https://www.openstreetmap.org">
+
+  <link rel="preload" href="./styles.css" as="style">
+  <link rel="preload" href="./images/brand.svg" as="image" imagesrcset="./images/brand.svg">
+  <link rel="preload" href="./script.js" as="script">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#main" class="brand" aria-label="Speghetti Factory - Home">
+          <img class="brand-mark" src="./images/brand.svg" width="32" height="32" alt="" aria-hidden="true" decoding="async" fetchpriority="high" />
+          <span class="brand-text">Speghetti</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+            <img class="brand-mark" src="./images/brand.svg" width="32" height="32" alt="" aria-hidden="true" fetchpriority="high" />
+          </button>
+          <ul id="nav-menu" class="nav-list" data-state="closed">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#what-are-we">What are we</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#event">Event</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero Section -->
+    <section class="hero reveal" aria-labelledby="hero-title" data-reveal>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-copy" data-reveal-group>
+            <h1 id="hero-title">Vibecoding, in your browser.</h1>
+            <p class="lead">Speghetti Factory is an instant online IDE—spin up environments, code, run, and collaborate with AI-assisted flow. Ship more, vibe more.</p>
+            <div class="hero-cta">
+              <a href="#features" class="button ghost">Explore features</a>
+              <a href="#what-are-we" class="button ghost subtle">Why Speghetti?</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true" data-reveal-group>
+            <div class="shape-grid">
+              <div class="shape circle"></div>
+              <div class="shape triangle"></div>
+              <div class="shape square"></div>
+              <div class="shape diamond"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features reveal" aria-labelledby="features-title" data-reveal>
+      <div class="container">
+        <h2 id="features-title">Why Speghetti Factory?</h2>
+        <ul class="feature-grid" role="list" data-reveal-group>
+          <li>
+            <h3>Instant environments</h3>
+            <p>Boot a dev workspace in seconds—no installs, no setup, just code.</p>
+          </li>
+          <li>
+            <h3>AI pair programming</h3>
+            <p>Autocomplete, refactors, and inline help that keeps you in flow.</p>
+          </li>
+          <li>
+            <h3>Fast by default</h3>
+            <p>Lightweight, responsive, and optimized for a snappy coding experience.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="what-are-we" class="about reveal" aria-labelledby="about-title" data-reveal>
+      <div class="container">
+        <div>
+          <h2 id="about-title">Built for flow</h2>
+          <p class="lead">From keyboard-first interactions to sensible defaults, Speghetti Factory is designed to keep you in the zone—spin up, vibe, and ship without friction.</p>
+        </div>
+        <div class="about-art" aria-hidden="true">
+          <div class="vibe-editor" role="img" aria-label="Animated vibecoding editor" data-vibe-editor>
+            <div class="editor-header">
+              <div class="editor-tabs">
+                <div class="tab active">main.js</div>
+                <div class="tab">style.css</div>
+                <div class="tab">index.html</div>
+              </div>
+              <div class="editor-controls">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+            </div>
+            <div class="editor-body">
+              <div class="editor-content">
+                <div class="line-numbers">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <div class="code-lines">
+                  <div class="line" data-step="query">
+                    <span class="typed" data-typed></span>
+                    <span class="caret" aria-hidden="true"></span>
+                  </div>
+                  <div class="line loading" data-step="loading" hidden>
+                    <span class="loading-text">Doing Magic<span class="dots" aria-hidden="true"><span>.</span><span>.</span><span>.</span></span></span>
+                  </div>
+                  <div class="line result" data-step="result" hidden>
+                    <span class="comment">// ✨ Vibe detected: optimal flow state achieved</span>
+                  </div>
+                  <div class="line result" data-step="result" hidden>
+                    <span class="keyword">function</span> <span class="function">vibeCoding</span><span class="paren">(</span><span class="param">query</span><span class="paren">)</span> <span class="brace">{</span>
+                  </div>
+                  <div class="line result" data-step="result" hidden>
+                    &nbsp;&nbsp;<span class="keyword">const</span> <span class="variable">vibe</span> <span class="operator">=</span> <span class="string">["✨", "🎛️", "🎶", "🚀"]</span><span class="method">.join</span><span class="paren">(</span><span class="string">" "</span><span class="paren">)</span><span class="semicolon">;</span>
+                  </div>
+                  <div class="line result" data-step="result" hidden>
+                    &nbsp;&nbsp;<span class="keyword">return</span> <span class="template">`ok • ${query} → ${vibe}`</span><span class="semicolon">;</span>
+                  </div>
+                  <div class="line result" data-step="result" hidden>
+                    <span class="brace">}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery reveal" aria-labelledby="gallery-title" data-reveal>
+      <div class="container">
+        <h2 id="gallery-title">Screenshots</h2>
+        <p class="lead">A glimpse of the Speghetti vibe.</p>
+        <ul class="gallery-grid" role="list" data-reveal-group>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=1" alt="Random image 1" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=2" alt="Random image 2" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=3" alt="Random image 3" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=5" alt="Random image 5" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=6" alt="Random image 6" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=7" alt="Random image 7" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=8" alt="Random image 8" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=9" alt="Random image 9" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=10" alt="Random image 10" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=11" alt="Random image 11" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=12" alt="Random image 12" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://picsum.photos/1000/1000?t=13" alt="Random image 13" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1000">
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing reveal" aria-labelledby="pricing-title" data-reveal>
+      <div class="container">
+        <div class="pricing-header">
+          <h2 id="pricing-title">Simple pricing</h2>
+          <div class="billing-toggle" role="group" aria-label="Billing frequency toggle" data-mode="monthly">
+            <button class="toggle-btn" data-billing="monthly" aria-pressed="true">Monthly</button>
+            <button class="toggle-btn" data-billing="yearly" aria-pressed="false">Yearly <span class="badge">Save 15%</span></button>
+          </div>
+        </div>
+        <div class="pricing-grid" data-billing="monthly" data-reveal-group>
+          <article class="plan card" aria-labelledby="basic-plan-title">
+            <h3 id="basic-plan-title">Hobby</h3>
+            <p class="price">
+              <span class="amount" data-monthly="$12" data-yearly="$120">$12</span>
+              <span class="interval" aria-hidden="true">/mo</span>
+            </p>
+            <ul class="features" role="list">
+              <li>All core features</li>
+              <li>Community support</li>
+              <li>Single private workspace</li>
+            </ul>
+            <a href="#contact" class="button ghost">Get started</a>
+          </article>
+          <article class="plan card highlight" aria-labelledby="business-plan-title">
+            <h3 id="business-plan-title">Pro</h3>
+            <p class="price">
+              <span class="amount" data-monthly="$29" data-yearly="$290">$29</span>
+              <span class="interval" aria-hidden="true">/mo</span>
+            </p>
+            <ul class="features" role="list">
+              <li>Advanced collaboration</li>
+              <li>Priority support</li>
+              <li>Unlimited private workspaces</li>
+            </ul>
+            <a href="#contact" class="button ghost">Go business</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video reveal" aria-labelledby="video-title" data-reveal>
+      <div class="container">
+        <h2 id="video-title">See it in action</h2>
+        <p class="lead">A quick tour of Speghetti Factory.</p>
+        <div class="video-frame">
+          <iframe
+            title="Product showcase video"
+            src="https://www.youtube-nocookie.com/embed/y9WkrRhFF0s"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq reveal" aria-labelledby="faq-title" data-reveal>
+      <div class="container">
+        <h2 id="faq-title">Frequently asked questions</h2>
+        <p class="lead">Everything you need to know about Speghetti Factory.</p>
+        <div class="faq-grid" data-reveal-group>
+          <article class="faq-item">
+            <h3>
+              <button class="accordion" aria-expanded="false" aria-controls="faq1" id="faq1-label">
+                <span class="accordion-title">What's included with Speghetti Factory?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq1" role="region" aria-labelledby="faq1-label" hidden>
+              <div class="accordion-content">
+                <p>Speghetti Factory includes everything you need to code from your browser:</p>
+                <ul>
+                  <li><strong>Instant Environments:</strong> Spin up preconfigured dev containers for popular stacks</li>
+                  <li><strong>AI Assistance:</strong> Inline suggestions, refactors, and explanations</li>
+                  <li><strong>Dark/Light Mode:</strong> Automatic theme detection with manual toggle</li>
+                  <li><strong>Collaboration:</strong> Share links and code together in real time</li>
+                  <li><strong>Accessibility:</strong> Thoughtful focus management and reduced motion support</li>
+                  <li><strong>Performance:</strong> Fast startup and responsive interactions</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          
+          <article class="faq-item">
+            <h3>
+              <button class="accordion" aria-expanded="false" aria-controls="faq2" id="faq2-label">
+                <span class="accordion-title">How can I customize my workspace?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq2" role="region" aria-labelledby="faq2-label" hidden>
+              <div class="accordion-content">
+                <p>Personalize your coding vibe with flexible workspace settings:</p>
+                <ul>
+                  <li><strong>Themes:</strong> Light, dark, and high-contrast options</li>
+                  <li><strong>Editor:</strong> Font size, ligatures, keymaps, and layout</li>
+                  <li><strong>Extensions:</strong> Enable tools for your favorite languages</li>
+                  <li><strong>AI:</strong> Tune suggestion aggressiveness and inline hints</li>
+                  <li><strong>Shortcuts:</strong> Customize keybindings to suit your flow</li>
+                </ul>
+                <p>All design tokens are centralized, making it easy to maintain consistency across your site.</p>
+              </div>
+            </div>
+          </article>
+          
+          <article class="faq-item">
+            <h3>
+              <button class="accordion" aria-expanded="false" aria-controls="faq3" id="faq3-label">
+                <span class="accordion-title">Is Speghetti Factory lightweight and fast?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq3" role="region" aria-labelledby="faq3-label" hidden>
+              <div class="accordion-content">
+                <p>Yes—Speghetti Factory is built for performance and minimal overhead:</p>
+                <ul>
+                  <li><strong>Lightweight UI:</strong> Minimal bundle and responsive controls</li>
+                  <li><strong>Modern Browser Features:</strong> Efficient rendering and caching</li>
+                  <li><strong>System Fonts:</strong> Native fonts for faster loading</li>
+                  <li><strong>Smart Caching:</strong> Projects open quickly and stay snappy</li>
+                  <li><strong>Progressive Enhancements:</strong> Works great on modern browsers</li>
+                  <li><strong>Fast Loading:</strong> Optimized for Core Web Vitals</li>
+                </ul>
+                <p>Perfect for projects where performance and simplicity are priorities.</p>
+              </div>
+            </div>
+          </article>
+          
+          <article class="faq-item">
+            <h3>
+              <button class="accordion" aria-expanded="false" aria-controls="faq4" id="faq4-label">
+                <span class="accordion-title">What browsers and devices are supported?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq4" role="region" aria-labelledby="faq4-label" hidden>
+              <div class="accordion-content">
+                <p>Speghetti Factory supports all modern browsers and devices:</p>
+                <ul>
+                  <li><strong>Modern Browsers:</strong> Chrome 90+, Firefox 88+, Safari 14+, Edge 90+</li>
+                  <li><strong>Mobile Devices:</strong> iOS Safari 14+, Chrome Mobile 90+, Samsung Internet 13+</li>
+                  <li><strong>Responsive Design:</strong> Optimized for mobile, tablet, and desktop viewports</li>
+                  <li><strong>Touch Support:</strong> Touch-friendly interactions and gestures</li>
+                  <li><strong>Accessibility:</strong> Screen reader compatible and keyboard navigation</li>
+                  <li><strong>Progressive Enhancement:</strong> Graceful degradation for older browsers</li>
+                </ul>
+                <p>CSS Grid and Flexbox are used with fallbacks, and JavaScript features are feature-detected.</p>
+              </div>
+            </div>
+          </article>
+          
+          <article class="faq-item">
+            <h3>
+              <button class="accordion" aria-expanded="false" aria-controls="faq5" id="faq5-label">
+                <span class="accordion-title">How do I deploy projects built here?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq5" role="region" aria-labelledby="faq5-label" hidden>
+              <div class="accordion-content">
+                <p>Deployment is simple—export and ship your projects anywhere:</p>
+                <ul>
+                  <li><strong>GitHub Pages:</strong> Push to a repository and enable Pages</li>
+                  <li><strong>Netlify:</strong> Drag-and-drop or connect your Git repository</li>
+                  <li><strong>Vercel:</strong> Import your repository; zero-config for many stacks</li>
+                  <li><strong>Traditional Hosting:</strong> Upload build artifacts via FTP</li>
+                  <li><strong>CDN:</strong> Serve static files from your preferred CDN</li>
+                  <li><strong>Build Process:</strong> Optional: add a CI step for optimization</li>
+                </ul>
+                <p>No server-side requirements or database needed - just upload and go!</p>
+              </div>
+            </div>
+          </article>
+          
+          <article class="faq-item">
+            <h3>
+              <button class="accordion" aria-expanded="false" aria-controls="faq6" id="faq6-label">
+                <span class="accordion-title">Can I use this for commercial projects?</span>
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq6" role="region" aria-labelledby="faq6-label" hidden>
+              <div class="accordion-content">
+                <p>Absolutely! Speghetti Factory is designed for both personal and commercial use:</p>
+                <ul>
+                  <li><strong>Commercial Use:</strong> Use for client projects, businesses, and apps</li>
+                  <li><strong>Modification:</strong> Customize, extend, and modify the code as needed</li>
+                  <li><strong>Redistribution:</strong> Include in your own projects and templates</li>
+                  <li><strong>Attribution:</strong> While not required, attribution is appreciated</li>
+                  <li><strong>No Restrictions:</strong> No licensing fees or usage limitations</li>
+                  <li><strong>Support:</strong> Community-driven support and documentation</li>
+                </ul>
+                <p>Perfect for agencies, freelancers, and businesses looking for a solid foundation.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Section -->
+    <section id="event" class="event reveal" aria-labelledby="event-title" data-reveal>
+      <div class="container">
+        <div class="event-inner">
+          <div class="event-copy">
+            <h2 id="event-title">Upcoming live stream</h2>
+            <p class="lead">Join us for a product deep-dive. We start soon—counting down below.</p>
+          </div>
+          <div class="countdown" data-target="2001-09-11T00:00:00Z" aria-live="polite">
+            <div class="time">
+              <span class="num" data-unit="days">0</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="time">
+              <span class="num" data-unit="hours">0</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="time">
+              <span class="num" data-unit="minutes">0</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="time">
+              <span class="num" data-unit="seconds">0</span>
+              <span class="label">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal" aria-labelledby="contact-title" data-reveal>
+      <div class="container">
+        <div class="contact-inner" data-reveal-group>
+          <div class="contact-copy">
+            <h2 id="contact-title">Contact us</h2>
+            <p class="lead">Questions or ideas? We’d love to hear from you.</p>
+            <ul class="contact-list" role="list">
+              <li><a href="mailto:hello@speghetti.dev">hello@speghetti.dev</a></li>
+              <li><a href="tel:+11234562633">+1 (123) 456 ‑ VIBE</a></li>
+            </ul>
+          </div>
+          <div class="map-frame" aria-label="Interactive map showing our location">
+            <iframe
+              title="Location map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=10.85%2C63.41%2C10.96%2C63.47&amp;layer=mapnik&amp;marker=63.445%2C10.905"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p>&copy; 2069 Speghetti Factory. All rights reserved.</p>
+        <ul class="footer-links" role="list">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+    <span class="visually-hidden">Toggle theme</span>
+    <img class="icon-sun" src="./images/sun.svg" width="22" height="22" alt="" aria-hidden="true" /> 
+    <img class="icon-moon" src="./images/moon.svg" width="22" height="22" alt="" aria-hidden="true" />
+  </button>
+  <script src="./script.js" defer></script>
+</body>
+</html>
