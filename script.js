@@ -270,14 +270,22 @@ document.addEventListener('DOMContentLoaded', function() {
     let started = false;
     const startIfVisible = () => {
       if (started) return;
-      const rect = aboutSection.getBoundingClientRect();
-      if (rect.top < window.innerHeight * 0.85) {
-        started = true;
-        runSequence();
-      }
+      started = true;
+      runSequence();
     };
 
-    document.addEventListener('scroll', startIfVisible, { passive: true });
-    startIfVisible();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !started) {
+          startIfVisible();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -15% 0px',
+      threshold: 0.1
+    });
+    
+    observer.observe(aboutSection);
   }
 });

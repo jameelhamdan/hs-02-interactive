@@ -100,6 +100,10 @@ body {
   --border-color: #2a3166;
 }
 
+[data-theme="dark"] .brand-mark {
+  filter: brightness(0) invert(1);
+}
+
 [data-theme="light"] {
   --text-primary: #1f2937;
   --text-secondary: #6b7280;
@@ -228,6 +232,8 @@ ul, ol {
 .brand-mark {
   width: 32px;
   height: 32px;
+  filter: brightness(0) invert(0);
+  transition: filter var(--duration) var(--easing);
 }
 
 .site-nav {
@@ -810,20 +816,43 @@ section {
 
 .countdown {
   display: grid;
-  grid-auto-flow: column;
-  gap: var(--space-8);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+}
+
+@media (min-width: 480px) {
+  .countdown {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+@media (min-width: 768px) {
+  .countdown {
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    gap: var(--space-8);
+  }
 }
 
 .countdown .time {
   background: var(--bg-elevated);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
-  padding: var(--space-4) var(--space-3);
+  padding: var(--space-3) var(--space-2);
   text-align: center;
-  min-width: 100px;
+  min-width: 80px;
   box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 480px) {
+  .countdown .time {
+    padding: var(--space-4) var(--space-3);
+    min-width: 100px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -835,9 +864,15 @@ section {
 
 .countdown .num {
   display: block;
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   font-weight: 700;
   color: var(--text-primary);
+}
+
+@media (min-width: 480px) {
+  .countdown .num {
+    font-size: var(--text-2xl);
+  }
 }
 
 @media (min-width: 768px) {
@@ -847,9 +882,15 @@ section {
 }
 
 .countdown .label {
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   font-weight: 600;
   color: var(--text-secondary);
+}
+
+@media (min-width: 480px) {
+  .countdown .label {
+    font-size: var(--text-base);
+  }
 }
 
 .event .event-copy h2 {
